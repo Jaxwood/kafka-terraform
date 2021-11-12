@@ -25,7 +25,7 @@ resource "confluentcloud_environment" "test-env" {
 resource "confluentcloud_kafka_cluster" "test-basic-cluster" {
   display_name = "test_cluster"
   availability = "SINGLE_ZONE"
-  cloud = "AZU"
+  cloud = "AZURE"
   region = "eu-westeurope"
   basic {}
   environment {
