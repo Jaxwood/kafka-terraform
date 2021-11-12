@@ -1,5 +1,7 @@
 # Kafka Terraform
 
+> An declarative approach to provisioing resources in Confluent Cloud.
+
 ## Terraform Installation
 
 ### Ubuntu installation
