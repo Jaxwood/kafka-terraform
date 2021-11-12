@@ -1,4 +1,4 @@
-# Kafka Terraform
+# Kafka + Terraform == ❤️
 
 > An declarative approach to provisioing resources in Confluent Cloud.
 
