@@ -35,4 +35,7 @@ jobs:
         run: terraform plan -no-color
     
       - id: apply
+        env:
+          CONFLUENT_CLOUD_API_SECRET: ${{ secrets.CONFLUENT_CLOUD_API_SECRET }}
+          CONFLUENT_CLOUD_API_KEY: ${{ secrets.CONFLUENT_CLOUD_API_KEY }}
         run: terraform apply
