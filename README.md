@@ -1,6 +1,6 @@
 # Kafka + Terraform == ❤️
 
-> An declarative approach to provisioing resources in Confluent Cloud.
+> Declarative approach to provisioing resources in Confluent Cloud.
 
 ## Terraform Installation
 
@@ -33,7 +33,7 @@ terraform -install-autocomplete
 
 ### Prerequisites
 
-*A Confluent Cloud account. Sign up here To run this example, you must be enrolled into the Confluent Cloud API v2 API Early Access program. To enroll, email Confluent support. If you're not enrolled, you'll receive 403 errors when you apply Terraform plans*
+*A Confluent Cloud account. Sign up [here](https://www.confluent.io/get-started?product=cloud) To run this example, you must be enrolled into the Confluent Cloud API v2 API Early Access program. To enroll, [email](mailto:cflt-tf-access@confluent.io) Confluent support. If you're not enrolled, you'll receive 403 errors when you apply Terraform plans*
 
 ### Applying Terraform Plan
 
