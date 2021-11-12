@@ -29,6 +29,12 @@ terraform -install-autocomplete
 
 ## Provisioning
 
+### Prerequisites
+
+*A Confluent Cloud account. Sign up here To run this example, you must be enrolled into the Confluent Cloud API v2 API Early Access program. To enroll, email Confluent support. If you're not enrolled, you'll receive 403 errors when you apply Terraform plans*
+
+### Applying Terraform Plan
+
 Export Confluent api key and secret
 
 ```sh
