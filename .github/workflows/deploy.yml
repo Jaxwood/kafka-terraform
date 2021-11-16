@@ -32,10 +32,10 @@ jobs:
       - run: terraform init
 
       - id: plan
-        run: terraform plan -parallelism=1 -no-color
+        run: terraform plan -parallelism=1 -no-color -out=tfplan_add_sa_env_and_cluster
     
       - id: apply
         env:
           CONFLUENT_CLOUD_API_SECRET: ${{ secrets.CONFLUENT_CLOUD_API_SECRET }}
           CONFLUENT_CLOUD_API_KEY: ${{ secrets.CONFLUENT_CLOUD_API_KEY }}
-        run: terraform apply -parallelism=1 -auto-approve
+        run: terraform apply -parallelism=1 tfplan_add_sa_env_and_cluster
