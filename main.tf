@@ -14,12 +14,12 @@ terraform {
 provider "confluentcloud" {}
 
 resource "confluentcloud_service_account" "dev-sa" {
-  display_name = "orginization service account"
+  display_name = "org-sa"
   description = "Access to org level resources "
 }
 
 resource "confluentcloud_environment" "dev-env" {
-  display_name = "Development environment"
+  display_name = "dev-env"
 }
 
 resource "confluentcloud_kafka_cluster" "dev-basic-cluster" {
