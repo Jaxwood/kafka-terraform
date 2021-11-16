@@ -66,3 +66,4 @@ terraform apply tf_plan
 - [Terraform install](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started)
 - [Confluent Terraform example](https://registry.terraform.io/providers/confluentinc/confluentcloud/latest/docs/guides/sample-project)
 - [Github example](https://github.com/confluentinc/terraform-provider-confluentcloud/blob/master/docs/guides/sample-project.md#run-terraform-to-create-your-kafka-cluster)
+- [Confluent provider documentation](https://registry.terraform.io/providers/confluentinc/confluentcloud/latest/docs)
