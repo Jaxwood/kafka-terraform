@@ -13,23 +13,23 @@ terraform {
 
 provider "confluentcloud" {}
 
-resource "confluentcloud_service_account" "test-sa" {
-  display_name = "test_sa"
-  description = "description for test_sa"
+resource "confluentcloud_service_account" "dev-sa" {
+  display_name = "orginization service account"
+  description = "Access to org level resources "
 }
 
-resource "confluentcloud_environment" "test-env" {
-  display_name = "test_env"
+resource "confluentcloud_environment" "dev-env" {
+  display_name = "Development environment"
 }
 
-resource "confluentcloud_kafka_cluster" "test-basic-cluster" {
+resource "confluentcloud_kafka_cluster" "dev-basic-cluster" {
   display_name = "test_cluster"
   availability = "SINGLE_ZONE"
   cloud = "AZURE"
   region = "westeurope"
   basic {}
   environment {
-    id = confluentcloud_environment.test-env.id
+    id = confluentcloud_environment.dev-env.id
   }
 }
 
