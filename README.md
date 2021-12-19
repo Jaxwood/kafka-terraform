@@ -33,7 +33,7 @@ terraform -install-autocomplete
 
 ### Prerequisites
 
-*A Confluent Cloud account. Sign up [here](https://www.confluent.io/get-started?product=cloud) To run this example, you must be enrolled into the Confluent Cloud API v2 API Early Access program. To enroll, [email](mailto:cflt-tf-access@confluent.io) Confluent support. If you're not enrolled, you'll receive 403 errors when you apply Terraform plans*
+_A Confluent Cloud account. Sign up [here](https://www.confluent.io/get-started?product=cloud) To run this example, you must be enrolled into the Confluent Cloud API v2 API Early Access program. To enroll, [email](mailto:cflt-tf-access@confluent.io) Confluent support. If you're not enrolled, you'll receive 403 errors when you apply Terraform plans_
 
 ### Applying Terraform Plan
 
@@ -51,6 +51,7 @@ terraform init
 ```
 
 Create the plan
+
 ```sh
 terraform plan -out=tf_plan
 ```
@@ -59,6 +60,23 @@ Apply the plan
 
 ```sh
 terraform apply tf_plan
+```
+
+## Testing
+
+### Prerequisites
+
+Run the following command to verify the cluster is up and running.
+
+```sh
+go mod init
+go mod tidy
+```
+
+To run the test, run the following command.
+
+```sh
+go test -v
 ```
 
 ## References
