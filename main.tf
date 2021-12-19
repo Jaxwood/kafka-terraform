@@ -1,6 +1,3 @@
-
-# Example for using Confluent Cloud https://docs.confluent.io/cloud/current/api.html
-# that creates multiple resources: a service account, an environment, a basic cluster, a topic, and 2 ACLs.
 # Configure Confluent Cloud provider
 terraform {
   required_providers {
@@ -14,19 +11,19 @@ terraform {
 provider "confluentcloud" {}
 
 resource "confluentcloud_service_account" "dev-sa" {
-  display_name = "org-sa"
-  description = "Access to org level resources "
+  display_name = var.sa-name
+  description  = "Access to org level resources "
 }
 
 resource "confluentcloud_environment" "dev-env" {
-  display_name = "dev-env"
+  display_name = var.env-name
 }
 
 resource "confluentcloud_kafka_cluster" "dev-basic-cluster" {
-  display_name = "test_cluster"
+  display_name = var.cluster-name
   availability = "SINGLE_ZONE"
-  cloud = "AZURE"
-  region = "westeurope"
+  cloud        = "AZURE"
+  region       = "westeurope"
   basic {}
   environment {
     id = confluentcloud_environment.dev-env.id
