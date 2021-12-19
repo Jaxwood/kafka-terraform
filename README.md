@@ -68,7 +68,7 @@ terraform apply tf_plan
 
 ### Prerequisites
 
-Run the following command to verify the cluster is up and running.
+Run the following commands to install dependencies.
 
 ```sh
 go mod init
@@ -87,3 +87,5 @@ go test -v
 - [Confluent Terraform example](https://registry.terraform.io/providers/confluentinc/confluentcloud/latest/docs/guides/sample-project)
 - [Github example](https://github.com/confluentinc/terraform-provider-confluentcloud/blob/master/docs/guides/sample-project.md#run-terraform-to-create-your-kafka-cluster)
 - [Confluent provider documentation](https://registry.terraform.io/providers/confluentinc/confluentcloud/latest/docs)
+- [Terratest](https://terratest.gruntwork.io/docs/getting-started/quick-start/)
+- [Terratest in Azure](https://docs.microsoft.com/en-us/azure/developer/terraform/test-modules-using-terratest)
