@@ -1,4 +1,6 @@
-# Kafka + Terraform == ❤️
+# Kafka + Terraform == ❤️ 
+
+[![Deploy](https://github.com/Jaxwood/kafka-terraform/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/Jaxwood/kafka-terraform/actions/workflows/deploy.yml)
 
 > Declarative approach to provisioing resources in Confluent Cloud.
 
